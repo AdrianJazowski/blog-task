@@ -1,0 +1,64 @@
+/** @format */
+
+.comment {
+  background: white;
+  width: 60%;
+  background: linear-gradient(
+    to right bottom,
+    rgb(220 209 209 / 70%),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+  margin: 0.5rem;
+}
+.comment__body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 5px;
+}
+.comment__body p {
+  padding: 0.5rem;
+  width: 90%;
+}
+.comment__body__like {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 25px;
+  transition: 0.5s;
+  cursor: pointer;
+
+}
+.comment__body__author {
+  display: flex;
+  justify-content: flex-end;
+}
+.comment__body__author p {
+  margin: 1rem;
+  text-align: end;
+}
+@media (max-width: 414px) {
+  .comment {
+    width: 90%;
+  }
+  .comment__body {
+    margin: 1rem 0;
+    width: inherit;
+  }
+  .comment__body__like {
+    top: 0;
+    right: 0;
+  }
+  .comment__body__author{
+    overflow-x: scroll;
+  }
+  .comment__body__author p{
+    font-size: 0.8rem;
+  }
+}
