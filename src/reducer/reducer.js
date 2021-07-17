@@ -10,7 +10,6 @@ const initialState = {
   posts: [],
   likedPost: getLikedPostsFromLocalStorage(),
   likedComments: getLikedCommentsFromLocalStorage(),
-  temporaryCommentBoard: [],
 };
 
 const reducer = (state = initialState, action) => {

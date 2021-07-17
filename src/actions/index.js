@@ -2,7 +2,7 @@
 
 import { actionsTypes } from "./actionsTypes";
 
-export const getPostFromApiAction = (posts) => ({
+export const getPostFromApi = (posts) => ({
   type: actionsTypes.GET_POST_FROM_API,
   payload: posts,
 });

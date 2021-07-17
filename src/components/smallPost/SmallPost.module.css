@@ -10,7 +10,7 @@
     rgba(255, 255, 255, 0.5)
   );
   border-radius: 1rem;
-  margin: 2rem 2rem;
+  margin: 2rem;
   padding: 2rem;
   box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
   justify-content: space-between;
@@ -55,4 +55,23 @@
 .post__body p:hover {
   color: #658ec6;
   font-size: 1.3rem;
+}
+
+@media (max-width: 360px) {
+  .post__body {
+    height: 80%;
+    min-width: 100px;
+  }
+  .post__body h2 {
+  font-size: 1.2rem;
+    font-weight: 500;
+   
+  }
+}
+@media (max-width: 360px) {
+  .post {
+    min-height: 200px;
+    width: 150px;
+    margin: 1rem;
+}
 }

@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { getPostFromApiAction } from "./actions";
+import { getPostFromApi } from "./actions";
 import styles from "./App.module.css";
 import Navbar from "./components/navbar/Navbar";
 import { routes } from "./routes";
@@ -18,7 +18,7 @@ const App = () => {
   const getPosts = async () => {
     const response = await fetch(apiUrl);
     const data = await response.json();
-    dispatch(getPostFromApiAction(data));
+    dispatch(getPostFromApi(data));
   };
 
   useEffect(() => {
@@ -32,8 +32,8 @@ const App = () => {
         <Route exact path={routes.home} component={Home} />
         <Route path={routes.singlePost} component={SinglePost} />
       </Switch>
-      <div class={styles.circle1}></div>
-      <div class={styles.circle2}></div>
+      <div className={styles.circle1}></div>
+      <div className={styles.circle2}></div>
     </BrowserRouter>
   );
 };
