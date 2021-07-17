@@ -1,0 +1,35 @@
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+    background-color: #23232e;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar .navbar__list__logo{
+    margin-bottom: 24px;
+}
+.navbar:hover{
+    width: 16rem;
+}
+.navbar:hover span{
+    display: inline;
+    font-size: 1.5rem;
+    left: 70px;
+}
+.navbar__list{
+    list-style: none;
+    padding: 0;
+    margin-top: 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+
