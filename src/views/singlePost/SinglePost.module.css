@@ -40,13 +40,11 @@
 .singlePost__content p {
   margin-top: 2rem;
 }
-
 .singlePost__comments {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-
 @media (max-width: 540px) {
   .singlePost {
     width: 80%;

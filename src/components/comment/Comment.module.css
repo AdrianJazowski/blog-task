@@ -33,7 +33,6 @@
   font-size: 25px;
   transition: 0.5s;
   cursor: pointer;
-
 }
 .comment__body__author {
   display: flex;
@@ -55,10 +54,10 @@
     top: 0;
     right: 0;
   }
-  .comment__body__author{
+  .comment__body__author {
     overflow-x: scroll;
   }
-  .comment__body__author p{
+  .comment__body__author p {
     font-size: 0.8rem;
   }
 }
